@@ -1,0 +1,11 @@
+CREATE DATABASE Cadastro;
+
+USE bancodedados_pessoas;
+
+CREATE TABLE cadastro2 (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(120) NOT NULL,
+    cpf VARCHAR(20) NOT NULL UNIQUE,
+    idade INT,
+    data_criacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
