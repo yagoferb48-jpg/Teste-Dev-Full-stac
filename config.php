@@ -1,13 +1,12 @@
 <?php
 $host = "localhost";
-$db_user = "root";
-$db_pass = "1095";
-$db_name = "cadastro"; 
+$user = "root";
+$pass = ""; 
+$db   = "cadastro";
 
-$con = new mysqli($host, $db_user, $db_pass, $db_name);
+$conexao = new mysqli($host, $user, $pass, $db);
 
-if ($con->connect_error) {
-    die("ERRO NA CONEXÃO: " . $con->connect_error);
+if ($conexao->connect_error) {
+    die("Erro ao conectar: " . $conexao->connect_error);
 }
-
 ?>
